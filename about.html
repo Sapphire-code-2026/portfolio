@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Coding Club</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root { --accent:#4f46e5; --bg:#f8f9ff; --card:#ffffff; }
+    .about-wrap{max-width:1000px;margin:0 auto;padding:24px;font-family:Inter,system-ui,sans-serif;line-height:1.7;color:#111827}
+    .hero{background:var(--card);border:1px solid #e5e7eb;border-radius:20px;padding:40px 28px;position:relative;overflow:hidden}
+    .hero::before{content:"";position:absolute;top:-40px;right:-40px;width:180px;height:180px;background:radial-gradient(circle at center,#c7d2fe 0%, transparent 70%);opacity:0.8}
+    .eyebrow{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+    .hero h1{font-size:2.6rem;line-height:1.1;margin:8px 0 14px;letter-spacing:-.02em}
+    .hero p{font-size:1.1rem;color:#4b5563;max-width:620px}
+    .two-col{display:flex;flex-direction:column;gap:20px;margin-top:28px}
+    .card{background:var(--card);border:1px solid #e5e7eb;border-radius:18px;padding:24px;transition:.2s}
+    .card:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(0,0,0,.06)}
+    .card h2{font-size:1.15rem;margin:0 0 12px;display:flex;align-items:center;gap:8px}
+    .card h2 span{width:28px;height:28px;background:#eef2ff;border-radius:8px;display:grid;place-items:center;font-size:.9rem}
+    .card ul{margin:0;padding-left:18px;color:#374151}
+    .card img{width:100%;border-radius:12px;margin-top:16px;object-fit:cover}
+    .values{margin-top:18px;display:grid;grid-template-columns:1fr;gap:12px}
+    .value{padding:14px 16px;background:var(--bg);border-radius:12px;border:1px solid #eef2ff}
+    .value strong{font-size:.95rem}
+    .value p{margin:4px 0 0;font-size:.9rem;color:#6b7280}
+    .meta{margin-top:20px;display:flex;gap:16px;flex-wrap:wrap;font-size:.9rem;color:#6b7280;border-top:1px solid #f3f4f6;padding-top:16px}
+    @media(min-width:700px){
+      .two-col{flex-direction:row}
+      .values{grid-template-columns:1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+     
+     <img src="images/logo.png" alt="Sapphire Coding Club Logo" class="logo-img" height="150px" width="150px">
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Our Projects</a>
+        </nav>   
+<div class="about-wrap">
+
+  <div class="hero">
+    <div class="eyebrow">Founded May 2024 • Ages 10-15</div>
+    <h1>We make coding make sense.</h1>
+    <p>We are a small coding club for children ages 10 to 15. We started in May two years ago because we wanted to create a place for children to learn coding outside of school.</p>
+  </div>
+
+  <div class="two-col">
+    <div class="card">
+      <h2><span>&lt;/&gt;</span> What We Do</h2>
+      <ul>
+        <li>Making games with blocks — then with real code</li>
+        <li>Learning HTML, CSS, and how the web actually works</li>
+        <li>Debugging together — fixing it when code breaks</li>
+      </ul>
+      <img src="images/img.png" alt="Members working on a project">
+      <p style="font-size:.85rem;color:#6b7280;margin-top:10px"><em>Members working on a project. Collaborative debugging is part of the process.</em></p>
+    </div>
+
+    <div class="card">
+      <h2><span>◍</span> Mission & Values</h2>
+      <p style="color:#374151">To give children a focused, friendly space to explore coding and build confidence to create with technology, not just use it.</p>
+      
+      <div class="values">
+        <div class="value"><strong>Teamwork</strong><p>We learn faster when we help each other.</p></div>
+        <div class="value"><strong>Problem Solving</strong><p>We stay patient and think through errors.</p></div>
+        <div class="value"><strong>Creativity</strong><p>We build our own ideas, not just tutorials.</p></div>
+        <div class="value"><strong>Consistency</strong><p>Small progress every week.</p></div>
+      </div>
+
+      <div class="meta">
+        <div><strong>When:</strong> Mondays ,Thursdays and Saturdays</div>
+        <div><strong>Where:</strong> ICT Room</div>
+        <div><strong>Level:</strong> Beginner-friendly</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
